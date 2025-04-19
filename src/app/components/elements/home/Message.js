@@ -10,7 +10,7 @@ const Message = () => {
   return (
 	<div className="ml-4 flex flex-col items-center gap-y-2">
 		<div className='flex flex-row items-center gap-x-2'>
-			<Capsule icon={Si42} title="Etudiant à Paris"  />
+			<Capsule icon={Si42} title="Etudiant à 42 Paris"  />
 		</div>
 	</div>
   );
