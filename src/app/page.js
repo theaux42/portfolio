@@ -11,20 +11,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full relative">
-      {/* Background Image */}
-      <Image
-        src="/sky-bg.png"
-        alt="Background"
-        fill
-        priority
-        quality={100}
-        style={{ objectFit: "cover", zIndex: -1 }}
-      />
+
+	{/* Insert here the new background component */}
 
       {/* Navbar */}
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 
-	  {/* Overlay */}
       {/* Content Area */}
       <ContentBox selectedPage={selectedPage} />
     </div>
