@@ -32,9 +32,6 @@ const Message = () => {
 			/>
 		</div>
 		<div className='flex flex-row items-center gap-x-2'>
-			<Capsule icon={Si42} title="Développeur Web" />
-		</div>
-		<div className='flex flex-row items-center gap-x-2'>
 			<Capsule icon={Si42} title="Etudiant à 42 Paris"  />
 		</div>
 	</div>
