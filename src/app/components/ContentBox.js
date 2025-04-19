@@ -25,7 +25,7 @@ const ContentBox = ({ selectedPage }) => {
       {/* Outer div for gradient border and shadow */}
       <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#666666]/20 to-[#A2A2A2]/20 filter drop-shadow-xl">
         {/* Inner div for background, blur, padding, and content */}
-        <div className="bg-[#252525]/75 backdrop-blur-md p-4 rounded-xl relative overflow-hidden min-w-[400px] min-h-[200px]"> {/* Added min width/height */}
+        <div className="bg-[#252525]/75 backdrop-blur-md p-4 rounded-xl relative overflow-hidden"> {/* Added min width/height */}
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedPage} // Key is now on the animating div

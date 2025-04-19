@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import ContentBox from './components/ContentBox';
 
+
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState('Home'); // Default page
 
@@ -12,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen w-full relative">
       {/* Background Image */}
       <Image
-        src="/background.png"
+        src="/sky-bg.png"
         alt="Background"
         fill
         priority
@@ -23,6 +24,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 
+	  {/* Overlay */}
       {/* Content Area */}
       <ContentBox selectedPage={selectedPage} />
     </div>

@@ -12,7 +12,7 @@ const Capsule = ({ icon: Icon, title, color = '#ffffff', size = 0.8 }) => {
 
   // All sizing now scales with `size`
   const height = `${2 * size}rem`;
-  const minWidth = `${3.5 * size}rem`;
+  // Removed minWidth calculation as width: 'fit-content' handles it
   const paddingX = `${0.75 * size}rem`;
   const fontSize = `${0.875 * size}rem`;
   const iconSize = `${1 * size}rem`;
@@ -24,7 +24,7 @@ const Capsule = ({ icon: Icon, title, color = '#ffffff', size = 0.8 }) => {
         background: `linear-gradient(to bottom, ${topColor}, ${bottomColor})`,
         border: `1px solid ${borderColor}`,
         height: height,
-        minWidth: minWidth,
+        width: 'fit-content', // Set width explicitly to fit content
         paddingLeft: paddingX,
         paddingRight: paddingX,
         fontSize: fontSize,
