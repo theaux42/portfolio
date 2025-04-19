@@ -13,9 +13,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   ];
 
   const socialItems = [
-    { name: 'LinkedIn', icon: FaLinkedin, href: '#' }, // Add actual links
-    { name: 'Discord', icon: FaDiscord, href: '#' },
-    { name: 'Mail', icon: FaEnvelope, href: '#' },
+    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/in/teo-babou-2744b7325/' }, // Add actual links
+    { name: 'Discord', icon: FaDiscord, href: 'https://discord.com/users/991165627958050910' },
+    { name: 'Mail', icon: FaEnvelope, href: 'mailto:theauxperso@gmail.com' },
   ];
 
   const Separator = () => <div className="h-6 w-px bg-white/30 mx-2"></div>;
