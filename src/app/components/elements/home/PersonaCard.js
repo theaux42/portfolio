@@ -4,7 +4,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import Separator from '../Separator'; // Changed from named import to default import
-import {MdOutlineLocationOn, MdOutlineCake } from "react-icons/md";
+import {MdOutlineLocationOn, MdOutlineCake, MdMailOutline} from "react-icons/md";
 
 const PersonaCard = () => {
     return (
@@ -26,6 +26,11 @@ const PersonaCard = () => {
             <div className="flex items-center text-gray-300 font-light">
                 <MdOutlineLocationOn className="mr-1.5" />
                 <span>Paris, France</span>
+            </div>
+			<Separator />
+            <div className="flex items-center text-gray-300 font-light text-sm">
+                <MdMailOutline className="mr-1.5" />
+                <span>tbabou@student.42.fr</span>
             </div>
         </div>
     );
