@@ -21,11 +21,14 @@ const ContentBox = ({ selectedPage }) => {
   const CurrentPageComponent = pageComponents[selectedPage] || Home; // Default to Home if page not found
 
   return (
-    <div className="flex items-center justify-center min-h-screen w-full">
+    // Adjusted padding for responsiveness
+    <div className="flex items-center justify-center min-h-screen w-auto min-w-fit p-4 sm:p-0"> {/* Changed w-full to w-auto and added min-w-fit */}
       {/* Outer div for gradient border and shadow */}
-      <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#666666]/20 to-[#A2A2A2]/20 filter drop-shadow-xl">
+      {/* Adjusted max-width and width for responsiveness */}
+      <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#666666]/20 to-[#A2A2A2]/20 filter drop-shadow-xl w-auto min-w-fit"> {/* Changed w-full and max-w-* to w-auto and min-w-fit */}
         {/* Inner div for background, blur, padding, and content */}
-        <div className="bg-[#252525]/75 backdrop-blur-md p-4 rounded-xl relative overflow-hidden"> {/* Added min width/height */}
+        {/* Adjusted padding for responsiveness */}
+        <div className="bg-[#252525]/75 backdrop-blur-md p-4 sm:p-6 md:p-8 rounded-xl relative overflow-hidden"> {/* Responsive padding */}
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedPage} // Key is now on the animating div
